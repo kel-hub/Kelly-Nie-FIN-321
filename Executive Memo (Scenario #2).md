@@ -3,7 +3,7 @@
 **Created by:** [Kelly Nie]  
 **Updated by:** [Kelly Nie]  
 **Date Created:** [October 23, 2025]  
-**Date Updated:** [October 23, 2025]  
+**Date Updated:** [October 24, 2025]  
 **Version:** [0.0]
 **LLM Used:"" [LLM] (optional if LLm used)
 

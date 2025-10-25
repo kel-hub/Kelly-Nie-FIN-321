@@ -1,4 +1,4 @@
-# [Memo Title]
+# [Stage 1: Executive Memo (Scenario #2)]
 
 **Created by:** [Kelly Nie]  
 **Updated by:** [Kelly Nie]  

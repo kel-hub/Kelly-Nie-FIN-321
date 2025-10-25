@@ -5,7 +5,7 @@
 **Date Created:** [October 23, 2025]  
 **Date Updated:** [October 24, 2025]  
 **Version:** [0.0]
-**LLM Used:"" [LLM] (optional if LLm used)
+**LLM Used:
 
 ---
 
@@ -29,7 +29,5 @@ A forward contract will allow us to secure a set dollar amount today for the fut
 ## Limitations & Next Steps
 We acknowledge that market rates, premiums, and interest rates may shift before execution, and that transaction costs or counterparty risk are not fully captured in our initial model. Our next step is to finalize the spreadsheet model, run multiple exchange rate and premium sensitivity scenarios, and then present our recommendation to the CFO. We will evaluate which hedge strategy best aligns with our risk tolerance and cost objective.
 
----
 
-## References
 

@@ -22,14 +22,14 @@ Our exposure is due to a foreign-currency receivable due in a year. Current spot
 ---
 
 ## Methods
-Describe the methodology you will use to achieve the objectives. This might include analytical tools, data sources, models, frameworks, or project phases. Keep the language clear and structured so others can follow the plan.
+A forward contract will allow us to secure a set dollar amount today for the future euro payment, removing uncertainty we may have about the final conversion rate. A money market hedge creates a similar outcome by using borrowing and investing activity that aligns with the timing of the receivable. We will also review a put option on euros, which offers protection against a weaker euro but allows gains if the currency strengthens, though it requires paying a premium upfront. To compare these approaches, we will build a spreadsheet model that calculates projected dollar proceeds under different future EUR/USD outcomes, incorporating the euro amount, today’s spot and forward rates, relevant interest rates, and the option cost. Through this analysis, we aim to recommend the most effective hedge to protect our revenue.
 
 ---
 
 ## Limitations & Next Steps
-Acknowledge any known constraints, assumptions, or uncertainties. Then describe the immediate next steps and who is responsible for them.
+We acknowledge that market rates, premiums, and interest rates may shift before execution, and that transaction costs or counterparty risk are not fully captured in our initial model. Our next step is to finalize the spreadsheet model, run multiple exchange rate and premium sensitivity scenarios, and then present our recommendation to the CFO. We will evaluate which hedge strategy best aligns with our risk tolerance and cost objective.
 
 ---
 
 ## References
-List any sources, data sets, or foundational research that informed this proposal. Use a consistent citation style (APA, MLA, or Chicago).
+

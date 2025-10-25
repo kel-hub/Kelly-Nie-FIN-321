@@ -17,12 +17,12 @@ We expect to receive €8,000,000 in one year from a European customer. Because 
 ---
 
 ## Background & Objectives
-Our exposure is due to a foreign-currency receivable due in a year. Current spot and forward rates for EUR/USD are 1.0850 and 1.0890, respectively. Without hedging, exchange rate fluctuations could reduce U.S. dollar proceeds, impacting projected revenue. Our goal is to protect USD cash flows from volatility while evaluating the cost, complexity, and flexibility of different hedging approaches.
+Our exposure is due to a foreign currency receivable in a year. Current spot and forward rates for EUR/USD are 1.0850 and 1.0890, respectively. Without hedging, exchange rate fluctuations could reduce U.S. dollar proceeds, impacting projected revenue. Our goal is to protect USD cash flows from volatility while evaluating the cost, complexity, and flexibility of different hedging approaches.
 
 ---
 
 ## Methods
-A forward contract will allow us to secure a set dollar amount today for the future euro payment, removing uncertainty we may have about the final conversion rate. A money market hedge creates a similar outcome by using borrowing and investing activity that aligns with the timing of the receivable. We will also review a put option on euros, which offers protection against a weaker euro but allows gains if the currency strengthens, though it requires paying a premium upfront. To compare these approaches, we will build a spreadsheet model that calculates projected dollar proceeds under different future EUR/USD outcomes, incorporating the euro amount, today’s spot and forward rates, relevant interest rates, and the option cost. Through this analysis, we aim to recommend the most effective hedge to protect our revenue.
+A forward contract will allow us to secure a set dollar amount today for the future euro payment, removing uncertainty we may have about the final conversion rate. A money market hedge creates a similar outcome by using borrowing and investing activity that aligns with the timing of the receivable. We will also review a put option on euros, which offers protection against a weaker euro but allows gains if the currency strengthens. To compare these approaches, we will create a spreadsheet model that calculates projected dollar proceeds under different future EUR/USD outcomes, incorporating the euro amount, today’s spot and forward rates, relevant interest rates, and the option cost. Through this analysis, we aim to recommend the most effective hedge to protect our revenue.
 
 ---
 

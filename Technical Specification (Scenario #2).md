@@ -5,7 +5,7 @@
 **Date Created:** [November 7, 2025]  
 **Date Updated:** [November 7, 2025]  
 **Version:** [0.0]
-**LLM Used:"" [LLM] (optional if LLm used)
+**LLM Used:
 
 **Role:** Financial Analyst / Treasury Analyst  
 **Audience:** CFO or Director of Treasury  

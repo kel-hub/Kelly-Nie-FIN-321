@@ -1,9 +1,9 @@
-# [Spec Title] – Technical Specification Template
+# [Spec ] – Technical Specification Template
 
-**Created by:** [name]  
-**Updated by:** [name]  
-**Date Created:** [date]  
-**Date Updated:** [date]  
+**Created by:** [Kelly Nie]  
+**Updated by:** [Kelly Nie]  
+**Date Created:** [November 7, 2025]  
+**Date Updated:** [November 7, 2025]  
 **Version:** [0.0]
 **LLM Used:"" [LLM] (optional if LLm used)
 
@@ -16,18 +16,7 @@
 
 ## 1. Problem Statement
 
-Briefly restate the exposure and objective in professional terms.
-
-Example phrasing:
-> Our company expects to receive EUR-denominated revenue in 12 months, exposing us to potential FX risk from fluctuations in the EURUSD rate. This specification outlines the analytical framework for quantifying, comparing, and evaluating alternative hedging strategies to mitigate that risk.
-
-Include:
-- Exposure type (receivable or payable)  
-- Foreign currency amount and time horizon  
-- Objective (e.g., protect USD value, preserve upside)  
-- Decision context (corporate treasury or business unit)
-
-> *A strong statement demonstrates clear understanding of both financial context and business implications.*
+Our company expects to receive a €8,000,000 foreign‑currency receivable in 12 months from a European customer. Because we report in USD, we are exposed to FX risk from potential movements in the EURUSD exchange rate. A weaker euro reduces the USD value of proceeds, creating a potential revenue shortfall. This Stage 2 specification defines the technical modeling framework for quantifying, comparing, and evaluating hedging alternatives, including a forward, a money‑market hedge, and a EUR put option to support treasury decision‑making. The firm’s objective is to protect USD value while preserving upside when feasible and determine which hedge structure best aligns with risk management goals.
 
 ---
 
@@ -37,16 +26,16 @@ Create a clean, professional input table. This will become the foundation for yo
 
 | Variable | Description | Unit | Example | Source |
 |-----------|-------------|------|----------|--------|
-| `FC_AMT` | Foreign-currency receivable | EUR | 1,200,000 | Company data |
-| `S₀` | Current EURUSD spot rate | USD/EUR | [Look up] | Market data |
+| `FC_AMT` | Foreign-currency receivable | EUR | 8,000,000 | Company data |
+| `S₀` | Current EURUSD spot rate | USD/EUR | [1.0850] | Market data |
 | `F₀` | 1-year EURUSD forward rate | USD/EUR | 1.0890 | Provided |
-| `r_USD` | USD 1-year interest rate | % | [Look up] | Market data |
-| `r_EUR` | EUR 1-year interest rate | % | [Look up] | Market data |
+| `r_USD` | USD 1-year interest rate | % | [4.00%] | Market data |
+| `r_EUR` | EUR 1-year interest rate | % | [3.00%] | Market data |
 | `t` | Time to maturity | Years | 1 | Derived |
-| `K_put` | EUR Put strike | USD/EUR | [Set at spot] | Analyst choice |
-| `K_call` | EUR Call strike | USD/EUR | [Set at spot] | Analyst choice |
-| `Premium_put` | Put premium | USD per contract | 0.017 | Scenario |
-| `Premium_call` | Call premium | USD per contract | 0.022 | Scenario |
+| `K_put` | EUR Put strike | USD/EUR | [1.0850] | Analyst choice |
+| `K_call` | EUR Call strike | USD/EUR | [1.0850] | Analyst choice |
+| `Premium_put` | Put premium | USD per contract | 0.021 | Scenario |
+| `Premium_call` | Call premium | USD per contract | 0.026 | Scenario |
 
 > *Tip:* Keep labels short and standardized. Think like a financial modeler — these names should become variable names, spreadsheet inputs, or prompt parameters later.
 
@@ -54,16 +43,8 @@ Create a clean, professional input table. This will become the foundation for yo
 
 ## 3. Assumptions & Constraints
 
-State all conventions used. Clarity here ensures reproducibility.
+We assume interest rates are simple annual yields and that the quoted forward represents a one‑year maturity. Exchange rates are quoted as USD per EUR. Option premiums are paid upfront in USD. Transaction costs, counterparty credit risk, margin requirements, early exercise, and liquidity effects are excluded. No interim cash flows are assumed. This framework is static and does not incorporate dynamic hedging. All inputs are treated as known and constant for modeling purposes.
 
-Example list:
-- Interest rates are quoted on a simple annual basis.  
-- Forward rate provided represents a 1-year maturity.  
-- Transaction and credit costs are excluded.  
-- Option premiums are paid upfront in USD.  
-- Exchange rates expressed as USD per EUR.  
-
-> *Write assumptions so another treasury analyst could replicate your results exactly.*
 
 ---
 

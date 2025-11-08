@@ -50,17 +50,30 @@ We assume interest rates are simple annual yields and that the quoted forward re
 
 ## 4. Calculation Flow
 
-Describe the logic and sequencing of your analysis — as if briefing a junior analyst or AI model builder. Focus on **order of operations**, not formulas.
+1. Forward Hedge
+   - Use the 1‑year forward rate (F₀) to lock in the USD value of €8,000,000.
+   - Compute: €8,000,000 × F₀.
+   - This gives a fixed USD amount to compare against other methods.
 
-Example flow:
-1. Compute USD proceeds under the forward hedge.  
-2. Recreate a synthetic forward using money market parity to validate rates.  
-3. Compute option hedge outcomes for both the EUR put and EUR call under varying spot outcomes \(S_T\).  
-4. Compare USD results across hedges at the base case and across sensitivity scenarios.  
-5. Summarize the trade-offs (certainty vs. optionality vs. cost).  
+2. Money Market Hedge
+   - Discount the €8,000,000 receivable using the EUR interest rate (r_EUR).
+   - Convert the discounted euros to USD at today’s spot rate (S₀).
+   - Invest the USD amount at the USD interest rate (r_USD) until maturity.
+   - Use the final USD amount for comparison.
 
-> *Your goal: anyone reading this section should know exactly how to implement your logic in Excel or code — without you explaining formulas.*
+3. Option Hedge
+   - Buy a EUR put with strike price K_put.
+   - For each possible future EURUSD rate (S_T), calculate the payoff: max(K_put – S_T, 0).
+   - Add the payoff to the unhedged proceeds and subtract the premium.
+   - Compare across different future EURUSD scenarios.
 
+4. Unhedged Case
+   -  For each S_T, estimate USD outcome as €8,000,000 × S_T.
+   -  Use this as the baseline for comparison.
+
+5. Compare Results
+   - Put all USD values from each method into a summary table.
+   - Chart results to show differences in risk, cost, and upside.
 ---
 
 ## 5. Outputs
@@ -76,7 +89,6 @@ List expected results from the model. These become your **spreadsheet outputs**,
 | `Chart_1` | Hedge outcomes vs. S_T | Line chart | Visual comparison |
 | `Summary` | Written conclusion | 1–2 paragraphs | Executive-ready takeaway |
 
-> *Outputs should read like a professional financial dashboard — clear, repeatable, and decision-focused.*
 
 ---
 

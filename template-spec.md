@@ -37,8 +37,6 @@ Create a clean, professional input table. This will become the foundation for yo
 | `Premium_put` | Put premium | USD per contract | 0.021 | Scenario |
 | `Premium_call` | Call premium | USD per contract | 0.026 | Scenario |
 
-> *Tip:* Keep labels short and standardized. Think like a financial modeler — these names should become variable names, spreadsheet inputs, or prompt parameters later.
-
 ---
 
 ## 3. Assumptions & Constraints
@@ -78,8 +76,6 @@ We assume interest rates are simple annual yields and that the quoted forward re
 
 ## 5. Outputs
 
-List expected results from the model. These become your **spreadsheet outputs**, **AI prompt targets**, and **Stage 5 discussion points**.
-
 | Output | Description | Format | Purpose |
 |---------|--------------|---------|----------|
 | `USD_forward` | USD proceeds from forward hedge | Numeric | Certainty benchmark |
@@ -93,44 +89,10 @@ List expected results from the model. These become your **spreadsheet outputs**,
 ---
 
 ## 6. Sensitivity Plan
-
-Define how you will test and visualize FX outcomes.
-
-Example:
-> Vary EURUSD spot at maturity \(S_T\) from 0.95×S₀ to 1.05×S₀ in increments of 0.01.  
-> For each value, compute USD proceeds under all hedge strategies.  
-> Present results as a comparison table and line chart.
-
-> *Professional analysts always test sensitivity — it shows how robust their recommendations are.*
+We will change the EURUSD rate at maturity (S_T) in a range around today’s rate, for example, from 0.95×S₀ to 1.05×S₀ in small steps. For each S_T, we will calculate how much USD we would get with each hedge strategy and put the results in a comparison table. We will also make a simple line chart to show how each hedge performs at different exchange rates. This helps us see which strategies protect against risk and which allow some upside.
 
 ---
 
 ## 7. Limitations & Next Steps
+We are not including trading fees, early option exercise, or credit risk. We also assume no other cash flows before maturity. These simplifications make the model easier but less realistic. Next, we will build the spreadsheet using this plan, test different exchange rate scenarios, and see which hedge works best. Finally, we will prepare the results to share with management.
 
-Briefly note any analytical limits (e.g., volatility ignored, credit risk excluded) and outline your immediate next step (e.g., model build in Stage 3).
-
-Example phrasing:
-> This specification does not incorporate implied volatility or transaction costs. The next phase will involve constructing an Excel model implementing this logic to quantify results under each hedge structure.
-
----
-
-# 🧭 Writing a Strong Specification
-
-**Your spec should:**
-- **Communicate like a professional:** clear, structured, and jargon-free.  
-- **Think one stage ahead:** your spec should feed directly into your Excel build or AI prompt.  
-- **Be internally consistent:** variables, labels, and steps must align.  
-- **Be reproducible:** a new analyst should be able to implement your plan without your help.  
-- **Be executive-relevant:** the CFO should understand *what you’re doing* and *why it matters*.
-
----
-
-## 🔗 How This Sets You Up for Later Stages
-
-| Stage | What This Spec Enables |
-|-------|------------------------|
-| **Stage 3** | Each “Input” and “Output” becomes a spreadsheet cell or named range. |
-| **Stage 4** | Your “Calculation Flow” becomes an AI prompt instruction block. |
-| **Stage 5** | Your “Outputs” drive the interpretation and recommendation. |
-
-> *Treat your specification as the bridge between business insight and technical execution — the CFO should be confident your plan is sound even before seeing the numbers.*

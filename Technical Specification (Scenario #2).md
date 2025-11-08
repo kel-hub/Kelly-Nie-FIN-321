@@ -1,4 +1,4 @@
-# [Spec ] – Technical Specification Template
+# Technical Specification (Scenario #2)
 
 **Created by:** [Kelly Nie]  
 **Updated by:** [Kelly Nie]  

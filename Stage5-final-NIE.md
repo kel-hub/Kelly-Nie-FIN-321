@@ -1,5 +1,10 @@
 # Stage 5 – Final Analysis & Recommendation
 
+Created by: [Kelly Nie] 
+Updated by: [Kelly Nie]
+Date Created: [December 12, 2025] 
+Date Updated: [December 12, 2025]
+
 ## A. Exposure Summary
 The firm expects to receive €8.0 million in one year from a European customer. Because our functional currency is USD, the company is exposed to the EURUSD exchange rate risk. If the euro depreciates over the next year, the USD value of the receivable will decline, directly reducing reported revenue and operating cash flow. Given the size of the exposure and its certainty in timing and amount, unmanaged FX volatility could introduce material earnings variability and complicate budgeting and liquidity planning.
 

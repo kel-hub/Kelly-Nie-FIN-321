@@ -1,5 +1,8 @@
 # Stage 4 – Prompt Engineering (4 Points)
-**Due:** December 12, 2025
+Created by: Kelly Nie 
+Role: Financial Analyst / Treasury Analyst
+
+Audience: CFO / Director of Treasury
 
 ## Goal
 Translate your Stage 2 specification and Stage 3 Excel logic into a precise, executable AI prompt capable of generating a complete, professional spreadsheet model. Your prompt must include your scenario-specific variables, real market data, and clear modeling requirements aligned with your specification.
@@ -16,15 +19,16 @@ Your prompt must include:
 
 ## A. Scenario-Specific Variables
 Use real values:
-- FC_AMT (EUR receivable)
-- Spot rate (looked up at time of running prompt)
-- Forward rate (provided)
-- Interest rates (looked up)
-- K_put, K_call
-- Premiums
-- T_days
-
-All values must be explicitly stated in your prompt.
+FC_AMT = €8,000,000
+S0_in (Spot EURUSD) = 1.1740
+F0_in (1-yr Forward) = 1.18865
+R_USD = 3.625%
+R_FC = 2.00%
+K_PUT / K_CALL = 1.0850
+PREM_PUT = 0.021
+PREM_CALL = 0.026
+T_DAYS = 360
+T_YRS = 1
 
 ## B. Excel Spreadsheet Requirements
 Your prompt must instruct the AI to generate a spreadsheet with:
@@ -163,19 +167,4 @@ Validate parity and confirm all named ranges.
 # EXPORT
 Return a downloadable Excel file.
 ```
-
----
-
-# Evaluation
-
-| Criterion | Description | Points |
-|----------|-------------|-------:|
-| Clarity & Structure | Readable by AI and humans | 1 |
-| Completeness | All logic, inputs, and outputs included | 1 |
-| AI-Readiness | Prompt can be executed by AI | 1 |
-| Professionalism | Reflects modern finance workflows | 1 |
-
----
-
-# Why This Matters
-You are learning how to convert domain knowledge into machine-readable instructions — a core skill for modern finance, treasury, risk, and analytics roles.
+https://1drv.ms/x/c/a664415754500bca/IQDOU68yWkLJQIlFYEJ6mWeXAVmEvfkCnuzQ9OyqXnOqU_0?e=ww1WAr 
